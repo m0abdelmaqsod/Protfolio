@@ -1,0 +1,798 @@
+.project {
+    margin: 20vh 0;
+}
+
+.project .titleProjects {
+    text-align: center;
+}
+
+.project .titleProjects h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.project .titleProjects p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #424242;
+}
+
+
+
+
+
+.project .navProject {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #92929271;
+    width: 45%;
+    margin: 10vh auto;
+    padding: 15px;
+}
+
+.project .navProject ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.project .navProject ul li {
+    text-align: center;
+}
+
+.project .navProject ul li a {
+    position: relative;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #000;
+}
+
+.project .navProject ul li a span {
+    font-size: 0px;
+    position: absolute;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+.project .navProject ul li .activeNavProj {
+    background-color: green;
+    color: #fff;
+}
+
+
+.project .navProject ul li .activeNavProj span {
+    color: green;
+    font-size: 20px;
+    position: absolute;
+    transform: translateY(-35px);
+    z-index: 1;
+}
+
+
+
+
+.project .navProject ul li .activeNavProj .bgIcon {
+    position: absolute;
+    top: -50px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation-name: bgIconNav;
+    animation-duration: 0.5s;
+}
+
+.project .navProject ul li:nth-child(1) .activeNavProj .bgIcon {
+    transform: translateX(calc(115px * 0));
+}
+
+
+.project .navProject ul li .activeNavProj .bgIcon::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 8px 8px #fff;
+}
+
+.project .navProject ul li .activeNavProj .bgIcon::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -8px 8px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project .allProject {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 50px;
+}
+
+.project .allProject .divAllProject {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px #92929271;
+}
+
+.project .allProject .divAllProject .divTitle h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.project .allProject .divAllProject .divImg {
+    width: 100%;
+    height: 35vh;
+    margin: 10px 0;
+}
+
+.project .allProject .divAllProject .divImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.project .allProject .divAllProject .divLinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+
+.project .allProject .divAllProject .divLinks a {
+    display: flex;
+    align-items: center;
+}
+
+.project .allProject .divAllProject .divLinks a span {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.project .allProject .divAllProject .divLinks a:nth-child(1) {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+/* === start of pagination */
+.project .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12vh 0 0;
+    transition: all 0.5s;
+}
+
+.pagination .btn_prev button,
+.pagination .btn_next button {
+    background-color: transparent;
+    margin: 10px;
+}
+
+    
+.pagination .btn_num:hover,
+.pagination .btn_prev button:hover,
+.pagination .btn_next button:hover {
+    color: green;
+    background-color: #0080001e;
+}
+
+
+
+.pagination .btn_num,
+.pagination .active,
+.btn_prev button,
+.btn_next button {
+    display: flex;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 5px;
+    border: 1px solid green;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.pagination .active {
+    background-color: green;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====*/
+@media (max-width:360px) {
+    .project .titleProjects h3 {
+        font-size: 25px;
+    }
+
+    .project .titleProjects p {
+        font-size: 13px;
+    }
+
+    .project .navProject {
+        width: 100%;
+        margin: 10vh auto 5vh;
+        padding: 15px 8px;
+    }
+
+    .project .navProject ul {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0px;
+    }
+
+    .project .navProject ul li a {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 15px;
+        transform: translateY(-29px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -38px;
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -15px;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -15px;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    .project .allProject {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 18px;
+    }
+
+
+    /* === start of pagination */
+    .project .pagination {
+        margin: 10vh 0 0;
+    }
+
+    .pagination .btn_prev button,
+    .pagination .btn_next button {
+        margin: 10px;
+    }
+
+
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width:361px) {
+    .project .titleProjects h3 {
+        font-size: 25px;
+    }
+
+    .project .titleProjects p {
+        font-size: 13px;
+    }
+
+
+    .project .navProject {
+        width: 100%;
+        margin: 10vh auto 5vh;
+        padding: 15px 8px;
+    }
+
+    .project .navProject ul {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0px;
+    }
+
+    .project .navProject ul li a {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 15px;
+        transform: translateY(-29px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -38px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -15px;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -15px;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .project .allProject {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 18px;
+    }
+
+
+
+
+    /* === start of pagination */
+    .project .pagination {
+        margin: 8vh 0 0;
+    }
+
+    .pagination .btn_prev button,
+    .pagination .btn_next button {
+        margin: 10px;
+    }
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width:450px) {
+    .project .navProject ul li a {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 17px;
+        transform: translateY(-32px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -40px;
+        width: 37px;
+        height: 37px;
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -15px;
+        top: 10px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -15px;
+        top: 10px;
+    }
+
+
+
+
+    .project .allProject {
+        row-gap: 30px;
+    }
+
+    .project .allProject .divAllProject {
+        padding: 20px;
+    }
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 20px;
+    }
+
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .project .titleProjects h3 {
+        font-size: 27px;
+    }
+
+    .project .titleProjects p {
+        font-size: 14px;
+    }
+
+
+    .project .navProject {
+        width: 70%;
+        margin: 10vh auto 8vh;
+        padding: 15px;
+    }
+
+    .project .navProject ul {
+        column-gap: 8px;
+    }
+
+    .project .navProject ul li a {
+        font-size: 15px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 18px;
+        transform: translateY(-33px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -45px;
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -18px;
+        top: 12px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -18px;
+        top: 12px;
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+
+
+
+
+
+
+    .project .allProject {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 18px;
+    }
+
+
+    /* === start of pagination === */
+    .project .pagination {
+        margin: 10vh 0 0;
+    }
+
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .project .titleProjects h3 {
+        font-size: 28px;
+    }
+
+    .project .titleProjects p {
+        font-size: 15px;
+    }
+
+    .project .navProject {
+        width: 55%;
+        margin: 10vh auto;
+    }
+
+    .project .navProject ul {
+        column-gap: 15px;
+    }
+
+    .project .navProject ul li a {
+        font-size: 16px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 20px;
+        transform: translateY(-35px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -50px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -20px;
+        top: 16px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -20px;
+        top: 16px;
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .project .allProject {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* === start of pagination */
+    .project .pagination {
+        margin: 10vh 0 0;
+    }
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 38px;
+        height: 38px;
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .project .titleProjects h3 {
+        font-size: 30px;
+    }
+
+
+    .project .navProject {
+        width: 45%;
+    }
+
+    .project .navProject ul {
+        column-gap: 20px;
+    }
+
+
+
+    .project .allProject {
+        column-gap: 40px;
+        row-gap: 50px;
+    }
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 20px;
+    }
+
+
+
+    /* === start of pagination */
+    .project .pagination {
+        margin: 12vh 0 0;
+    }
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .project .titleProjects h3 {
+        font-size: 38px;
+    }
+
+    .project .titleProjects p {
+        font-size: 20px;
+    }
+
+
+
+    .project .navProject {
+        width: 55%;
+        border-radius: 20px;
+        padding: 25px 15px;
+    }
+
+    .project .navProject ul {
+        column-gap: 25px;
+    }
+
+    .project .navProject ul li a {
+        padding: 8px 10px;
+        font-size: 23px;
+    }
+
+    .project .navProject ul li .activeNavProj span {
+        font-size: 28px;
+        transform: translateY(-50px);
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon {
+        top: -63px;
+        width: 63px;
+        height: 63px;
+    }
+
+
+    .project .navProject ul li .activeNavProj .bgIcon::before {
+        left: -22px;
+        top: 15px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .project .navProject ul li .activeNavProj .bgIcon::after {
+        right: -22px;
+        top: 15px;
+        width: 23px;
+        height: 23px;
+    }
+
+
+
+
+
+
+
+
+
+    .project .allProject {
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .project .allProject .divAllProject .divTitle h3 {
+        font-size: 23px;
+    }
+
+
+    .project .allProject .divAllProject .divLinks a {
+        font-size: 20px;
+    }
+
+
+
+    /* === start of pagination */
+    .pagination .btn_prev button,
+    .pagination .btn_next button {
+    margin: 0 25px;
+    }
+
+
+
+    .pagination .btn_num,
+    .pagination .active,
+    .btn_prev button,
+    .btn_next button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}

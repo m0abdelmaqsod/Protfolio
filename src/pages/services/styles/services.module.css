@@ -1,0 +1,333 @@
+.services {
+    margin-bottom: 20vh;
+}
+
+.services .titleServices {
+    text-align: center;
+}
+
+.services .titleServices h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.services .titleServices p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #424242;
+}
+
+
+
+.services .allServices {
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+
+.services .allServices .divServe {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #92929271;
+    padding: 5vh 15px;
+    margin: 5vh 0;
+    transition: all 0.5s;
+}
+
+.services .allServices .divServe:hover {
+    background-color: #ececec;
+
+}
+
+.services .allServices .divServe .titleInfoServe {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+
+.services .allServices .divServe p {
+    text-align: center;
+    color: #424242;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====*/
+@media (max-width:320px) {
+    .services {
+        margin: 20vh 0;
+    }
+
+    .services .titleServices h3 {
+        font-size: 25px;
+    }
+
+    .services .titleServices p {
+        font-size: 14px;
+    }
+
+
+
+    .services .allServices {
+        margin: 10vh auto;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+
+    .services .allServices .divServe {
+        margin: 0;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .services .allServices .divServe p {
+        line-height: 25px;
+    }
+}
+
+
+
+@media (min-width:321px) {
+    .services {
+        margin: 20vh 0;
+    }
+
+    .services .titleServices h3 {
+        font-size: 25px;
+    }
+
+    .services .titleServices p {
+        font-size: 14px;
+    }
+
+
+
+    .services .allServices {
+        margin: 10vh auto;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+
+    .services .allServices .divServe {
+        margin: 0;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .services .allServices .divServe p {
+        line-height: 25px;
+    }
+}
+
+
+
+@media (min-width:450px) {
+    .services .titleServices h3 {
+        font-size: 28px;
+    }
+
+    .services .titleServices p {
+        font-size: 15px;
+    }
+
+
+
+    .services .allServices {
+        margin: 10vh auto;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 5px;
+    }
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .services .titleServices h3 {
+        font-size: 28px;
+    }
+
+    .services .titleServices p {
+        font-size: 15px;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 5px;
+    }
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .services {
+        margin: 0;
+    }
+
+    .services .titleServices h3 {
+        font-size: 30px;
+    }
+
+    .services .allServices {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 10px;
+    }
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 20px;
+    }
+
+    .services .allServices .divServe p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+
+    .services .allServices {
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .services .allServices .divServe .titleInfoServe {
+        margin-bottom: 15px;
+    }
+
+    .services .allServices .divServe p {
+        line-height: 23px;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .services {
+        margin: 15vh 0;
+    }
+
+    .services .titleServices h3 {
+        font-size: 38px;
+    }
+
+    .services .titleServices p {
+        font-size: 20px;
+    }
+
+
+    .services .allServices .divServe .titleInfoServe h3 {
+        font-size: 23px;
+    }
+
+    .services .allServices .divServe p {
+        line-height: 30px;
+        font-size: 18px;
+    }
+}

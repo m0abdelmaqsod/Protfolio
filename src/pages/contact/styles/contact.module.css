@@ -1,0 +1,734 @@
+.contact {
+    margin: 20vh 0;
+}
+
+.contact .titleContact {
+    text-align: center;
+}
+
+.contact .titleContact h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.contact .titleContact p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #424242;
+}
+
+
+
+
+
+.contact .allContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin: 40px 0;
+
+}
+
+.contact .allContact .divSocialCont,
+.divFormCont {
+    text-align: center;
+}
+
+.contact .allContact .divSocialCont .titleSocial h3,
+.divFormCont .titleCont h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0 0 40px;
+}
+
+
+
+
+
+
+.contact .allContact .divSocialCont .divSocial {
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #92929271;
+}
+
+.contact .allContact .divSocialCont .divSocial span {
+    font-size: 25px;
+}
+
+.contact .allContact .divSocialCont .divSocial h3 {
+    font-weight: 500;
+}
+
+.contact .allContact .divSocialCont .divSocial>p {
+    margin: 10px 0;
+    color: #424242;
+}
+
+.contact .allContact .divSocialCont .divSocial a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    border-radius: 20px;
+    border-bottom: 1px solid green;
+    transition: all 0.5s;
+}
+
+.contact .allContact .divSocialCont .divSocial a p {
+    margin-right: 10px;
+}
+
+.contact .allContact .divSocialCont .divSocial a span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: green;
+    transition: all 0.5s;
+}
+
+.contact .allContact .divSocialCont .divSocial a:hover span {
+    color: #fff;
+}
+
+.contact .allContact .divSocialCont .divSocial a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact .allContact .divFormCont .divForm {
+    background-color: #fff;
+    box-shadow: 0 0 5px #92929271;
+    border-radius: 10px;
+    padding: 20px 0;
+    height: 98vh;
+}
+
+
+.contact .allContact .divFormCont .divForm form div {
+    width: 80%;
+    margin: 22px auto;
+    position: relative;
+}
+
+.contact .allContact .divFormCont .divForm form div input,
+div textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid green;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact .allContact .divFormCont .divForm form div span {
+    color: #464646;
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    padding: 20px;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: none;
+    /* background-color: red; */
+}
+
+.contact .allContact .divFormCont .divForm form div input:focus~span,
+.contact .allContact .divFormCont .divForm form div input:valid~span {
+    background-color: #fff;
+    padding: 0 10px;
+    transform: translate(20px, -10px);
+    color: green;
+}
+
+.contact .allContact .divFormCont .divForm form div textarea:focus~span,
+.contact .allContact .divFormCont .divForm form div textarea:valid~span {
+    background-color: #fff;
+    padding: 0 10px;
+    transform: translate(20px, -10px);
+    color: green;
+}
+
+
+.contact .allContact .divFormCont .divForm form div textarea {
+    height: 35vh;
+}
+
+.contact .allContact .divFormCont .divForm form div textarea::placeholder {
+    color: green;
+}
+
+
+
+
+
+
+.contact .allContact .divFormCont .divForm button {
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0;
+    border-bottom: 1px solid green;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.contact .allContact .divFormCont .divForm button p {
+    margin-right: 10px;
+}
+
+.contact .allContact .divFormCont .divForm button span {
+    display: flex;
+    align-items: center;
+    color: green;
+    transition: all 0.5s;
+}
+
+.contact .allContact .divFormCont .divForm button:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.contact .allContact .divFormCont .divForm button:hover span {
+    color: #fff;
+}
+
+
+
+
+
+.contact .allContact .divFormCont .divForm .mass_success,
+.divForm .mass_failed {
+    width: 85%;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0080001f;
+    border-radius: 10px;
+}
+
+
+.contact .allContact .divFormCont .divForm .mass_failed p,
+.divForm .mass_success p {
+    font-size: 15px;
+    color: green;
+}
+
+.contact .allContact .divFormCont .divForm .mass_failed span,
+.divForm .mass_success span {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: green;
+    font-size: 20px;
+}
+
+.contact .allContact .divFormCont .divForm .mass_failed {
+    background-color: #ff00001f;
+}
+
+.contact .allContact .divFormCont .divForm .mass_failed p {
+    color: red;
+}
+
+.contact .allContact .divFormCont .divForm .mass_failed span {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====*/
+@media (max-width:320px) {
+    .contact .titleContact h3 {
+        font-size: 25px;
+    }
+
+    .contact .titleContact p {
+        font-size: 13px;
+    }
+
+
+
+
+
+    .contact .allContact {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        margin: 30px 0;
+    }
+
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 20px;
+    }
+
+
+
+    .contact .allContact .divSocialCont .divSocial {
+        margin: 30px 0;
+    }
+
+
+
+    .contact .allContact .divFormCont .divForm {
+        height: 115vh;
+    }
+
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 90%;
+    }
+
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 18px;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 90%;
+        height: 80px;
+        padding: 10px;
+        display: block;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed p,
+    .divForm .mass_success p {
+        font-size: 15px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        justify-content: center;
+        margin: 0 0 5px;
+    }
+}
+
+
+
+@media (min-width:321px) {
+    .contact .titleContact h3 {
+        font-size: 25px;
+    }
+
+    .contact .titleContact p {
+        font-size: 13px;
+    }
+
+
+
+    .contact .allContact {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        margin: 30px 0;
+    }
+
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    .contact .allContact .divSocialCont .divSocial {
+        margin: 30px 0;
+    }
+
+    .contact .allContact .divFormCont .divForm {
+        height: 115vh;
+    }
+
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 90%;
+    }
+
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 18px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 90%;
+        height: 80px;
+        padding: 10px;
+        display: block;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed p,
+    .divForm .mass_success p {
+        font-size: 15px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        justify-content: center;
+        margin: 0 0 5px;
+    }
+}
+
+
+
+@media (min-width:450px) {
+    .contact .titleContact h3 {
+        font-size: 28px;
+    }
+
+    .contact .titleContact p {
+        font-size: 14px;
+    }
+
+
+
+
+
+    .contact .allContact {
+        row-gap: 40px;
+    }
+
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 22px;
+    }
+
+
+
+
+
+
+    .contact .allContact .divSocialCont .divSocial {
+        margin: 30px 0;
+    }
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 90%;
+    }
+
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 19px;
+    }
+
+
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 90%;
+        height: 50px;
+        display: flex;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed p,
+    .divForm .mass_success p {
+        font-size: 15px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        justify-content: start;
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .contact {
+        margin: 15vh 0 8vh;
+    }
+
+    .contact .allContact {
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 22px;
+    }
+
+
+
+    .contact .allContact .divSocialCont .divSocial {
+        margin: 30px 0;
+    }
+
+    .contact .allContact .divFormCont .divForm {
+        height: 110vh;
+    }
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 90%;
+    }
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 19px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 90%;
+        height: 50px;
+        display: flex;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed p,
+    .divForm .mass_success p {
+        font-size: 15px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        justify-content: start;
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+
+    .contact .allContact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact .allContact .divFormCont .divForm {
+        height: 115vh;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        margin: 0 10px 0 0;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .contact .titleContact h3 {
+        font-size: 30px;
+    }
+
+    .contact .titleContact p {
+        font-size: 15px;
+    }
+
+
+
+    .contact .allContact {
+        column-gap: 50px;
+        margin: 40px 0;
+    }
+
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 23px;
+    }
+
+
+
+    .contact .allContact .divFormCont .divForm {
+        height: 98vh;
+    }
+
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 80%;
+    }
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 20px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 85%;
+        height: 45px;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .contact .titleContact h3 {
+        font-size: 38px;
+    }
+
+    .contact .titleContact p {
+        font-size: 20px;
+    }
+
+
+    .contact .allContact {
+        column-gap: 70px;
+    }
+
+
+    .contact .allContact .divSocialCont .titleSocial h3,
+    .divFormCont .titleCont h3 {
+        font-size: 28px;
+    }
+
+
+
+    .contact .allContact .divSocialCont .divSocial span {
+        font-size: 35px;
+    }
+
+    .contact .allContact .divSocialCont .divSocial h3 {
+        font-size: 25px;
+    }
+
+    .contact .allContact .divSocialCont .divSocial>p {
+        font-size: 20px;
+    }
+
+    .contact .allContact .divSocialCont .divSocial a {
+        font-size: 23px;
+        width: 200px;
+        height: 50px;
+        border-bottom: 2px solid green;
+    }
+
+    .contact .allContact .divSocialCont .divSocial a span {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    .contact .allContact .divFormCont .divForm {
+        height: 97vh;
+    }
+
+
+    .contact .allContact .divFormCont .divForm form div {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .contact .allContact .divFormCont .divForm form div input,
+    div textarea {
+        padding: 25px 20px;
+    }
+
+    .contact .allContact .divFormCont .divForm form div span {
+        font-size: 18px;
+    }
+
+
+    .contact .allContact .divFormCont .divForm form div textarea {
+        height: 35vh;
+    }
+
+
+
+
+    .contact .allContact .divFormCont .divForm button {
+        font-size: 23px;
+        width: 200px;
+        height: 50px;
+        border-bottom: 2px solid green;
+    }
+
+
+
+
+
+    .contact .allContact .divFormCont .divForm .mass_success,
+    .divForm .mass_failed {
+        width: 90%;
+        height: 65px;
+    }
+
+
+    .contact .allContact .divFormCont .divForm .mass_failed p,
+    .divForm .mass_success p {
+        font-size: 20px;
+    }
+
+    .contact .allContact .divFormCont .divForm .mass_failed span,
+    .divForm .mass_success span {
+        margin: 0 15px 0 0;
+        font-size: 25px;
+    }
+}

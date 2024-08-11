@@ -1,0 +1,663 @@
+.sidebar {
+    background-color: #fff;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translate(-50%, -50%);
+    padding: 10px 0;
+    border-radius: 20px;
+    position: fixed;
+    box-shadow: 0 0 1px #00000059;
+}
+
+.sidebar .divSide {
+    /* background-color: rebeccapurple; */
+}
+
+.sidebar .divSide ul {
+    max-height: 100vh;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+.sidebar .divSide ul li a {
+    /* background-color: red; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.sidebar .divSide ul li a:hover {
+    background-color: #00000018;
+}
+
+.sidebar .divSide ul li a span {
+    display: flex;
+}
+
+.sidebar .divSide ul li:nth-child(2) a span {
+    font-size: 16px;
+}
+
+.sidebar .divSide ul li:nth-child(3) a span:nth-child(2) {
+    position: absolute;
+    font-size: 14px;
+    left: 13px;
+    top: 5px;
+    /* color: red; */
+}
+
+
+
+
+.sidebar .divSide ul li a p {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    text-align: end;
+    font-size: 12px;
+    position: absolute;
+    left: 0px;
+    transition: all 0.8s;
+}
+
+.sidebar .divSide ul li a:hover p {
+    overflow: visible;
+    background-color: #fff;
+    border: 1px solid #00000059;
+    border-radius: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-width: 100px;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -85px;
+}
+
+
+
+.sidebar .divSide ul li a:hover p::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    position: absolute;
+    top: 9px;
+    right: -5px;
+    transform: rotate(45deg);
+    border-top: 1px solid #00000059;
+    border-right: 1px solid #00000059;
+}
+
+
+
+.sidebar .divSide ul li .activeSide span:nth-child(1) {
+    background-color: green;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.sidebar .divSide ul li .activeSide span:nth-child(2) {
+    color: #fff;
+}
+
+.sidebar .divSide ul li .activeSide p {
+    color: green;
+}
+
+.sidebar .divSide ul li .activeSide:hover p {
+    border: 1px solid green;
+}
+
+.sidebar .divSide ul li .activeSide:hover p::before {
+    border-top: 1px solid green;
+    border-right: 1px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:320px) {
+    .sidebar {
+        width: 100%;
+        top: 100%;
+        right: -50%;
+        transform: translate(-50%, -100%);
+        padding: 10px;
+        border-radius: 15px;
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+        box-shadow: 0 0 5px #00000059;
+        z-index: 99;
+    }
+
+    .sidebar .divSide {
+        width: 95%;
+    }
+
+    .sidebar .divSide ul {
+        max-height: 10vh;
+        height: 8vh;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+
+    .sidebar .divSide ul li a {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .sidebar .divSide ul li a:hover {
+        background-color: transparent;
+    }
+
+    .sidebar .divSide ul li a span {
+        transition: all 0.5s;
+    }
+
+    .sidebar .divSide ul li a p {
+        height: 0;
+        width: 0;
+        font-size: 12px;
+        left: 0px;
+    }
+
+    .sidebar .divSide ul li a:hover p {
+        background-color: transparent;
+        border: 0px solid #00000059;
+        border-radius: 0px;
+        max-width: 0;
+        width: 0;
+        height: 0;
+        left: auto;
+        overflow: hidden;
+    }
+
+
+    .sidebar .divSide ul li a:hover p::before {
+        display: none;
+    }
+
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        color: green;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-38px);
+        box-shadow: 0px 0px 5px #92929271;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: -20px;
+        box-shadow: 8px 8px #fff;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 39px;
+        box-shadow: -8px 8px #fff;
+    }
+
+
+    .sidebar .divSide ul li .activeSide span:nth-child(1) {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        transform: translateY(-38px);
+        color: green;
+        z-index: 1;
+    }
+
+    .sidebar .divSide ul li .activeSide span:nth-child(2) {
+        transform: translateY(-35px);
+        z-index: 1;
+        color: green;
+    }
+
+
+    .sidebar .divSide ul li .activeSide p {
+        color: #fff;
+        background-color: green;
+        font-size: 11px;
+        width: 65px;
+        height: 25px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: auto;
+        left: auto;
+    }
+
+
+
+    .sidebar .divSide ul li .activeSide:hover p {
+        border: 0px solid green;
+    }
+
+    .sidebar .divSide ul li .activeSide:hover p::before {
+        border-top: 0px solid green;
+        border-right: 0px solid green;
+    }
+
+}
+
+
+
+@media (min-width:321px) {
+    .sidebar {
+        width: 100%;
+        top: 100%;
+        right: -50%;
+        transform: translate(-50%, -100%);
+        padding: 10px;
+        border-radius: 15px;
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+        box-shadow: 0 0 5px #00000059;
+        z-index: 99;
+    }
+
+    .sidebar .divSide {
+        width: 95%;
+    }
+
+    .sidebar .divSide ul {
+        max-height: 10vh;
+        height: 8vh;
+        align-items: start;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+
+    .sidebar .divSide ul li a {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .sidebar .divSide ul li a:hover {
+        background-color: transparent;
+    }
+
+    .sidebar .divSide ul li a span {
+        transition: all 0.5s;
+    }
+
+    .sidebar .divSide ul li a p {
+        height: 0;
+        width: 0;
+        font-size: 12px;
+        left: 0px;
+    }
+
+    .sidebar .divSide ul li a:hover p {
+        background-color: transparent;
+        border: 0px solid #00000059;
+        border-radius: 0px;
+        max-width: 0;
+        width: 0;
+        height: 0;
+        left: auto;
+        overflow: hidden;
+    }
+
+
+
+    .sidebar .divSide ul li a:hover p::before {
+        display: none;
+    }
+
+
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        color: green;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-38px);
+        box-shadow: 0px 0px 5px #92929271;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: -20px;
+        box-shadow: 8px 8px #fff;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 39px;
+        box-shadow: -8px 8px #fff;
+    }
+
+
+    .sidebar .divSide ul li .activeSide span:nth-child(1) {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        transform: translateY(-38px);
+        color: green;
+        z-index: 1;
+    }
+
+    .sidebar .divSide ul li .activeSide span:nth-child(2) {
+        transform: translateY(-35px);
+        z-index: 1;
+        color: green;
+    }
+
+
+    .sidebar .divSide ul li .activeSide p {
+        color: #fff;
+        background-color: green;
+        font-size: 11px;
+        width: 65px;
+        height: 25px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: auto;
+        left: auto;
+    }
+
+
+    .sidebar .divSide ul li .activeSide:hover p {
+        border: 0px solid green;
+    }
+
+    .sidebar .divSide ul li .activeSide:hover p::before {
+        border-top: 0px solid green;
+        border-right: 0px solid green;
+    }
+
+}
+
+
+
+@media (min-width:450px) {
+    .sidebar {
+        border-radius: 20px;
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+    }
+
+    .sidebar .divSide {
+        width: 85%;
+    }
+
+    .sidebar .divSide ul li a {
+        font-size: 20px;
+    }
+
+    .sidebar .divSide ul li .activeSide p {
+        font-size: 13px;
+        width: 80px;
+        height: 25px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .sidebar {
+        width: 50px;
+        top: 50%;
+        right: -5px;
+        transform: translate(-50%, -50%);
+        padding: 10px 0;
+        border-radius: 20px;
+        box-shadow: 0 0 1px #00000059;
+    }
+
+    .sidebar .divSide {
+        width: auto;
+    }
+
+    .sidebar .divSide ul {
+        max-height: 100vh;
+        height: 50vh;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .sidebar .divSide ul li a {
+        font-size: 22px;
+    }
+
+    .sidebar .divSide ul li a:hover {
+        background-color: #00000018;
+    }
+
+    .sidebar .divSide ul li a span {
+        border-radius: 50%;
+    }
+
+    .sidebar .divSide ul li a:hover p {
+        overflow: visible;
+        background-color: #fff;
+        border: 1px solid #00000059;
+        border-radius: 20px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        max-width: 100px;
+        width: 75px;
+        height: 30px;
+        left: -85px;
+    }
+
+
+
+    .sidebar .divSide ul li a:hover p::before {
+        display: block;
+    }
+
+
+
+
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar {
+        display: none;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::before {
+        display: none;
+    }
+
+    .sidebar .divSide ul li .activeSide .bgIconSidebar::after {
+        display: none;
+    }
+
+
+    .sidebar .divSide ul li .activeSide span:nth-child(1) {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: green;
+        color: #fff;
+        transform: translateY(0px);
+        border-radius: 50%;
+    }
+
+    .sidebar .divSide ul li .activeSide span:nth-child(2) {
+        transform: translateY(0px);
+        color: #fff;
+    }
+
+
+
+
+    .sidebar .divSide ul li .activeSide p {
+        color: green;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 600;
+        width: 0px;
+        height: 0px;
+        top: 5px;
+        left: 0;
+    }
+
+
+
+
+    .sidebar .divSide ul li .activeSide:hover p {
+        border: 1px solid green;
+    }
+
+    .sidebar .divSide ul li .activeSide:hover p::before {
+        border-top: 1px solid green;
+        border-right: 1px solid green;
+    }
+}
+
+
+
+/* @media (min-width:1024px) {}
+
+
+
+@media (min-width:1200px) {}
+ */
+
+
+@media (min-width:1440px) {
+    .sidebar {
+        width: 70px;
+        border-radius: 30px;
+        box-shadow: 0 0 5px #00000059;
+    }
+
+    .sidebar .divSide ul {
+        height: 45vh;
+    }
+
+    .sidebar .divSide ul li a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .sidebar .divSide ul li:nth-child(2) a span {
+        font-size: 20px;
+    }
+
+    .sidebar .divSide ul li:nth-child(3) a span:nth-child(2) {
+        font-size: 18px;
+        left: 17px;
+        top: 8px;
+    }
+
+    .sidebar .divSide ul li a p {
+        font-size: 16px;
+    }
+
+    .sidebar .divSide ul li a:hover p {
+        width: 90px;
+        height: 35px;
+        left: -100px;
+    }
+
+
+
+    .sidebar .divSide ul li a:hover p::before {
+        top: 13px;
+        right: -5px;
+    }
+
+
+    .sidebar .divSide ul li .activeSide span:nth-child(1) {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    .sidebar .divSide ul li .activeSide span:nth-child(2) {
+        font-size: 25px;
+    }
+
+
+    .sidebar .divSide ul li .activeSide p {
+        font-size: 16px;
+        top: 9px;
+    }
+}

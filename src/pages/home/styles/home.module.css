@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+
+.home {
+    /* background-color: #000; */
+    width: 80%;
+    margin: auto;
+    padding: 5vh 0;
+
+}
+
+.home .divHeadHome {
+    /* background-color: #388E3C; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3%;
+    padding-top: 10vh;
+}
+
+
+.home .infoHome {
+    padding: 10vh 0 5vh;
+    /* background-color: antiquewhite; */
+}
+
+.home .infoHome h6 {
+    /* background-color: blueviolet; */
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+.home .infoHome h1 p {
+    color: #000;
+    font-size: 50px;
+}
+
+.home .infoHome h1 span {
+    font-size: 45px;
+    color: green;
+}
+
+
+
+
+.home .infoHome .descHome {
+    /* background-color: antiquewhite; */
+    font-size: 12px;
+    margin: 10px 0;
+    line-height: 20px;
+    word-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.home .infoHome .allBtn {
+    /* background-color: red; */
+}
+
+.home .infoHome .allBtn ul {
+    margin-top: 5vh;
+    width: 65%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .infoHome .allBtn ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+
+.home .infoHome .allBtn ul li:nth-child(2) a {
+    background-color: #000;
+}
+
+.home .infoHome .allBtn ul li:nth-child(3) a {
+    background-color: #1976d2;
+}
+
+.home .infoHome .allBtn ul li:nth-child(4) a {
+    background-color: #388E3C;
+}
+
+
+
+
+.home .infoHome .allBtn ul li .btnDownload {
+    width: 180px;
+    border-radius: 20px;
+    border-bottom: 1px solid green;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.home .infoHome .allBtn ul li .btnDownload:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.home .infoHome .allBtn ul li .btnDownload p {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.home .infoHome .allBtn ul li .btnDownload span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: green;
+    transition: all 0.5s;
+}
+
+.home .infoHome .allBtn ul li .btnDownload:hover span {
+    color: #fff;
+}
+
+
+
+
+
+
+
+.divMotion {
+    /* background-color: red; */
+    position: relative;
+}
+
+
+
+/* ======= start of div Images ======= */
+.home .divImages {
+    /* background-color: slategrey; */
+    padding: 5vh 0;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .divImages img {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.home .divImages>span {
+    position: absolute;
+    width: 405px;
+    height: 405px;
+    border-radius: 50%;
+    box-shadow: 0px -40px 30px inset #F5F6FC;
+}
+
+
+.svgCircle {
+    /* background-color: red; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====*/
+@media (max-width:320px) {
+    .home {
+        width: 90%;
+        padding: 0;
+    }
+
+    .home .divHeadHome {
+        grid-template-columns: 1fr;
+        padding-top: 0vh;
+    }
+
+
+    .home .infoHome {
+        padding: 5vh 0 5vh;
+        overflow: hidden;
+    }
+
+
+    .home .infoHome h1 p {
+        font-size: 35px;
+    }
+
+    .home .infoHome h1 span {
+        font-size: 35px;
+    }
+
+
+
+    .home .infoHome .descHome {
+        font-size: 13px;
+    }
+
+
+
+    .home .infoHome .allBtn ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .home .infoHome .allBtn ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home .infoHome .allBtn ul li:nth-child(1) {
+        grid-column: 1/4;
+    }
+
+
+
+
+
+
+    .motion {
+        grid-row: 1/1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .motion .divMotion {
+        position: relative;
+        width: 330px;
+        height: 328px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        padding: 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    .home .divImages img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home .divImages>span {
+        width: 255px;
+        height: 255px;
+    }
+}
+
+
+
+@media (min-width:321px) {
+    .home {
+        width: 80%;
+        padding: 0vh 0;
+    }
+
+    .home .divHeadHome {
+        grid-template-columns: 1fr;
+        padding-top: 0vh;
+    }
+
+
+    .home .infoHome {
+        padding: 5vh 0 5vh;
+        overflow: hidden;
+    }
+
+
+    .home .infoHome h6 {
+        margin-bottom: 10px;
+    }
+
+    .home .infoHome h1 p {
+        font-size: 35px;
+    }
+
+    .home .infoHome h1 span {
+        font-size: 35px;
+    }
+
+
+
+    .home .infoHome .descHome {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+
+
+    .home .infoHome .allBtn ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        row-gap: 30px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .home .infoHome .allBtn ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home .infoHome .allBtn ul li:nth-child(1) {
+        grid-column: 1/4;
+    }
+
+
+
+
+
+
+
+    .motion {
+        grid-row: 1/1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .motion .divMotion {
+        position: relative;
+        width: 346px;
+        height: 344px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        padding: 0;
+        width: 268px;
+        height: 268px;
+    }
+
+    .home .divImages img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home .divImages>span {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+
+
+@media (min-width:450px) {
+    .home .infoHome .descHome {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+
+    .motion .divMotion {
+        width: 366px;
+        height: 364px;
+    }
+
+
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        width: 274px;
+        height: 274px;
+    }
+
+
+    .home .divImages>span {
+        width: 276px;
+        height: 276px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .home {
+        padding: 10vh 0;
+    }
+
+    .home .infoHome {
+        padding: 0vh;
+    }
+
+    .home .infoHome h1 p {
+        font-size: 50px;
+    }
+
+    .home .infoHome h1 span {
+        font-size: 45px;
+    }
+
+    .home .infoHome .descHome {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+
+    .home .infoHome .allBtn ul {
+        margin-top: 5vh;
+        width: 50%;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+
+    .home .infoHome .allBtn ul li:nth-child(1) {
+        grid-column: 1/2;
+    }
+
+
+
+    /* ======= start of div Images ======= */
+    .motion .divMotion {
+        width: 386px;
+        height: 384px;
+    }
+
+    .home .divImages {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home .divImages>span {
+        width: 302px;
+        height: 302px;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .home .divHeadHome {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home .infoHome {
+        padding: 10vh 0 5vh;
+    }
+
+    .home .infoHome h1 p {
+        font-size: 35px;
+    }
+
+    .home .infoHome h1 span {
+        font-size: 35px;
+    }
+
+    .home .infoHome .descHome {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+
+
+    .home .infoHome .allBtn ul {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .home .infoHome .allBtn ul li:nth-child(1) {
+        grid-column: 1/2;
+    }
+
+
+
+
+
+    .motion {
+        grid-column: 2/3;
+    }
+
+    .motion .divMotion {
+        width: 420px;
+        height: 420px;
+    }
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        width: 320px;
+        height: 320px;
+    }
+
+    .home .divImages>span {
+        width: 322px;
+        height: 322px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .home {
+        padding: 5vh 0;
+    }
+
+    .home .divHeadHome {
+        column-gap: 3%;
+        padding-top: 5vh;
+    }
+
+    .home .infoHome {
+        padding: 10vh 0 5vh;
+    }
+
+    .home .infoHome h1 p {
+        font-size: 50px;
+    }
+
+    .home .infoHome h1 span {
+        font-size: 45px;
+    }
+
+    .home .infoHome .descHome {
+        font-size: 12px;
+    }
+
+    .home .infoHome .allBtn ul {
+        width: 65%;
+        margin-top: 5vh;
+    }
+
+    .home .infoHome .allBtn ul li:nth-child(1) {
+        grid-column: 1/2;
+    }
+
+
+
+
+
+
+
+    .motion .divMotion {
+        width: 440px;
+        height: 440px;
+    }
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        padding: 5vh;
+        width: 400px;
+        height: 400px;
+    }
+
+    .home .divImages>span {
+        width: 344px;
+        height: 344px;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .home {
+        padding: 10vh 0;
+        width: 80%;
+    }
+
+    .home .divHeadHome {
+        padding-top: 0vh;
+    }
+
+    .home .infoHome {
+        padding: 10vh 0;
+    }
+
+    .home .infoHome h6 {
+        font-size: 18px;
+    }
+
+    .home .infoHome .descHome {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .home .infoHome .allBtn ul {
+        width: 70%;
+    }
+
+    .home .infoHome .allBtn ul li a {
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .home .infoHome .allBtn ul li .btnDownload {
+        width: 200px;
+    }
+
+    .home .infoHome .allBtn ul li .btnDownload p {
+        font-size: 20px;
+    }
+
+    .home .infoHome .allBtn ul li .btnDownload span {
+        font-size: 20px;
+    }
+
+
+    .motion .divMotion {
+        width: 500px;
+        height: 500px;
+    }
+
+    /* ======= start of div Images ======= */
+    .home .divImages {
+        padding: 2vh;
+        width: 400px;
+        height: 400px;
+    }
+
+    .home .divImages>span {
+        width: 374px;
+        height: 374px;
+    }
+}

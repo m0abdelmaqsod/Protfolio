@@ -1,0 +1,324 @@
+.skills .titleSkills {
+    text-align: center;
+}
+
+.skills .titleSkills h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.skills .titleSkills p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #424242;
+}
+
+
+
+.skills .allSkills {
+    margin: 15vh 0 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+
+
+.skills .divSkillsFront {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #92929271;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.skills .divSkillsFront:hover {
+    background-color: #ececec;
+}
+
+.skills .divSkillsFront .titleFront {
+    text-align: center;
+}
+
+.skills .divSkillsFront .titleFront h3 {
+    font-size: 23px;
+}
+
+
+
+.skills .divSkillsFront .allSkillsFront {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+.skills .divSkillsFront .allSkillsFront div {
+    display: flex;
+    margin: 5px 0;
+}
+
+.skills .divSkillsFront .allSkillsFront div span {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====*/
+@media (max-width:320px) {
+    .skills {
+        margin: 5vh 0;
+        padding: 5vh 0;
+    }
+
+    .skills .titleSkills h3 {
+        font-size: 25px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 13px;
+    }
+
+    .skills .allSkills {
+        margin: 10vh 0 5vh;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 20px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront {
+        margin-top: 15px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div {
+        margin: 5px 0;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width:321px) {
+    .skills {
+        margin: 5vh 0;
+        padding: 5vh 0;
+    }
+
+    .skills .titleSkills h3 {
+        font-size: 25px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 13px;
+    }
+
+    .skills .allSkills {
+        margin: 10vh 0 5vh;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 20px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront {
+        margin-top: 15px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div {
+        margin: 5px 0;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width:450px) {
+    .skills .titleSkills h3 {
+        font-size: 28px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 14px;
+    }
+
+    .skills .allSkills {
+        margin: 10vh 0 5vh;
+    }
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 21px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .skills {
+        padding: 8vh 0;
+    }
+
+    .skills .titleSkills h3 {
+        font-size: 30px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 15px;
+    }
+
+    .skills .allSkills {
+        margin: 10vh 0 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 20px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media (min-width:1024px) {
+    .skills {
+        margin: 20vh 0 5vh;
+    }
+
+    .skills .titleSkills h3 {
+        font-size: 30px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 15px;
+    }
+
+    .skills .allSkills {
+        column-gap: 30px;
+    }
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 22px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div {
+        margin: 8px 0;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .skills .titleSkills h3 {
+        font-size: 30px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 15px;
+    }
+
+    .skills .allSkills {
+        margin: 15vh 0 5vh;
+        column-gap: 50px;
+    }
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 23px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront {
+        margin-top: 20px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div {
+        margin: 5px 0;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .skills .titleSkills h3 {
+        font-size: 38px;
+    }
+
+    .skills .titleSkills p {
+        font-size: 20px;
+    }
+
+    .skills .allSkills {
+        margin: 10vh 0 5vh;
+        column-gap: 50px;
+    }
+
+    .skills .divSkillsFront .titleFront h3 {
+        font-size: 28px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div {
+        margin: 8px 0;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div span {
+        font-size: 22px;
+    }
+
+    .skills .divSkillsFront .allSkillsFront div p {
+        font-size: 22px;
+    }
+}

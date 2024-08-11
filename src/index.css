@@ -1,0 +1,41 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #F5F6FC;
+  /* overflow: scroll; */
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* color: red; */
+  background-color: #fff;
+  border-left: 1px solid #88888849;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 128, 0, 0.205);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: green;
+}
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
