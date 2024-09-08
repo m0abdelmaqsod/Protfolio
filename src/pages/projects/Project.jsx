@@ -34,8 +34,8 @@ const project = [
     nameProject: "E-Commerce-smart-shop",
     imgProject: proj1,
     language: "react",
-    github: "https://github.com/m0abdelmaqsod/eCommerce-smart-shop",
-    live: "",
+    github: "https://github.com/m0abdelmaqsod/E-Commerce-smart-shop",
+    live: "https://e-commerce-smart-shop.vercel.app/",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const project = [
     imgProject: proj2,
     language: "react",
     github: "https://github.com/m0abdelmaqsod/instagram",
-    live: "",
+    live: "https://instagram-pink-beta.vercel.app/",
   },
   {
     id: 3,
@@ -58,8 +58,8 @@ const project = [
     nameProject: "E-Commerce tasty treat",
     imgProject: proj4,
     language: "react",
-    github: "https://github.com/m0abdelmaqsod/eCommerce_tasty_treat",
-    live: "",
+    github: "https://github.com/m0abdelmaqsod/E-Commerce-tasty-treat",
+    live: "https://e-commerce-tasty-treat.vercel.app",
   },
   {
     id: 5,
@@ -74,8 +74,8 @@ const project = [
     nameProject: "Portfolio me",
     imgProject: proj6,
     language: "React",
-    github: "",
-    live: "",
+    github: "https://github.com/m0abdelmaqsod/Protfolio",
+    live: "https://protfolio-three-rosy.vercel.app/",
   },
   {
     id: 7,
@@ -221,12 +221,12 @@ const Project = () => {
 
 
                 <div className={styles.divLinks}>
-                  <Link to={item.live}>
+                  <Link to={item.live} target='_blank'>
                     <span><TbWorldWww /></span>
                     <p>Live</p>
                   </Link>
 
-                  <Link to={item.github}>
+                  <Link to={item.github} target='_blank'>
                     <span><FaGithub /></span>
                     <p>Github</p>
                   </Link>
