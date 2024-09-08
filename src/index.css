@@ -7,18 +7,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
   font-family: "JetBrains Mono", monospace;
 }
 
 body {
   background-color: #F5F6FC;
-  /* overflow: scroll; */
 }
 
 body::-webkit-scrollbar {
   width: 10px;
-  /* color: red; */
   background-color: #fff;
   border-left: 1px solid #88888849;
 }
